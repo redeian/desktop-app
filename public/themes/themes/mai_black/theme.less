@@ -1,0 +1,201 @@
+#leftNotebook {
+  background: none !important;
+  background-color: rgba(37,49,62, 0.96) !important;
+  // background: url(images/mohu.png) !important;
+  // background-repeat: repeat;
+}
+
+.folderHeader .fa-left, .folderHeader span {
+  color: #fff;
+}
+#addNotebookPlus {
+  color: #F9F8F8;
+}
+#notebookList {
+  border-top: none;
+
+  // 添加笔记本框
+  input {
+    background: transparent;
+    color: #fff;
+  }
+}
+.folderBody a:hover {
+  background-color: transparent !important;
+  font-weight: bold;
+}
+
+.ztree li a.curSelectedNode {
+    color: #eee;
+}
+.ztree li a.curSelectedNode,
+#starNotes li.selected {
+  background-color: transparent;
+  font-weight: bold;
+  a {
+    color: #eee;
+  }
+}
+
+#starNotes li, .ztree li {
+  border: none;
+  a {
+    color: #eee;
+  }
+}
+
+.sync-icon, #myProfile a {
+  color: #fff;
+}
+
+#searchNotebookForList {
+  background: transparent;
+  color: #fff;
+  border: 1px solid rgba(230, 230, 230, 0.5);
+  height: 25px;
+  &::-webkit-input-placeholder {
+    color: #eee !important; /* WebKit browsers */
+    font-size: 12px;
+  }
+}
+
+.no-info {
+  color: #fff;
+}
+
+.progress-bar {
+  background: #fff;
+}
+
+
+//----------------------
+
+
+#noteItemList {  
+    
+    .item-title {
+        border-bottom: none;
+    }
+
+    &.snippet-view {
+        .item {
+            height: 80px;
+        }
+        .item-desc{
+              margin: 5px 15px;
+        }
+    }
+}
+
+#myNotebooks .folderBody {
+    padding: 15px;
+}
+
+#searchNote {
+    margin: 0;
+    padding: 2px 0px;
+    width:100%;
+}
+
+#searchNote input{
+    width:100%;
+}
+
+#noteItemList {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    overflow-y: scroll;
+    padding: 0 0px;    
+}
+
+#noteItemList .item {
+    position: relative;
+    overflow: hidden;
+    cursor: default;
+    border-bottom: none;
+    margin-top: 0px;
+    background-color: #fff;
+    
+}
+
+#noteItemList .item-active,
+#noteItemList .item-active:hover {
+    background-color: #EEE; // #eee;/*@bgColor*/;
+    color: #222;
+    .fa {
+        color: #EEE;
+    }
+    .item-info .fa {
+        color: #222;
+    }
+    .item-title {
+        color: #222;
+    }
+}
+
+#noteItemList .item-thumb {
+    width: 66px;
+    height: 66px;
+    line-height: 66px;
+    overflow: hidden;
+    position: absolute;
+    z-index: 1;
+    top: 5px;
+    right: 10px;
+    background-color: #fff;
+    margin-right: 1px;
+    border-radius: 3px;
+    text-align: center;
+}
+
+#noteItemList .item-thumb img {
+    max-width: 66px;
+}
+
+#noteItemList .item-title {
+    font-weight: 800;
+    font-size: 14px;
+    height: 22px;
+    line-height: 20px;
+    overflow: hidden;
+    margin-bottom: 0px;
+    border-bottom: none;
+}
+
+#noteItemList .item-desc {
+    position: relative;
+    // left: 0;
+    // top: 4px;
+    // right: 0px;
+    margin: 0px 20px;
+    .fa {
+        color: #666;
+    }
+}
+
+#noteItemList .item-image .item-desc {
+    right: 70px;
+}
+
+#noteItemList .item-info {
+    margin: 0;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-size: 12px;
+    font-weight: 300;
+}
+
+#noteItemList .desc {
+    margin: 0;
+    word-wrap: break-word;
+    text-overflow: ellipsis;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 10pt;
+}
